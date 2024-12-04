@@ -1,6 +1,6 @@
 package com.project.task1;
 
-public interface FizzBuzzSimple {
+public interface FizzBuzzWordGenerator {
 
     /**
      * Написать программу, которой на вход подаётся число от 1 до 100
@@ -11,5 +11,5 @@ public interface FizzBuzzSimple {
      * иначе программа должна вернуть само число в виде строки.
      * @param number - входной параметр
      */
-    String print(int number);
+    String generate(int number);
 }

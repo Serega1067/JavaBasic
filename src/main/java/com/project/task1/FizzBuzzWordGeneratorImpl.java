@@ -1,9 +1,9 @@
 package com.project.task1;
 
-public class FizzBuzzSimpleGame implements FizzBuzzSimple {
+public class FizzBuzzWordGeneratorImpl implements FizzBuzzWordGenerator {
 
     @Override
-    public String print(int number) {
+    public String generate(int number) {
         if (number < 0) {
             throw new IllegalArgumentException(
                     "number should be great or equal 0"
