@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.project.task1.FizzBuzzSimpleGameTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-12-03T16:21:15" hostname="DESKTOP-LRFVLGM" time="0.019">
+<testsuite name="com.project.task1.FizzBuzzSimpleGameTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-04T07:33:15" hostname="DESKTOP-LRFVLGM" time="0.027">
   <properties/>
-  <testcase name="testFizz()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.015"/>
-  <testcase name="testCorrectInput()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.001"/>
-  <testcase name="testIncorrectInput()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.001"/>
+  <testcase name="testBuzz()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.015"/>
+  <testcase name="testFizz()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.0"/>
+  <testcase name="testCorrectInput()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.0"/>
+  <testcase name="testFizzBuzz()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.0"/>
+  <testcase name="testNumber()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.006"/>
+  <testcase name="testIncorrectInput()" classname="com.project.task1.FizzBuzzSimpleGameTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

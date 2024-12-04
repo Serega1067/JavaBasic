@@ -16,10 +16,18 @@ public class FizzBuzzSimpleGame implements FizzBuzzSimple {
         }
 //        throw new UnsupportedOperationException("todo: implement this");
 
+        if (number % 15 == 0) {
+            return "FizzBuzz";
+        }
+
+        if (number % 5 == 0) {
+            return "Buzz";
+        }
+
         if (number % 3 == 0) {
             return "Fizz";
         }
 
-        return "";
+        return "" + number;
     }
 }
