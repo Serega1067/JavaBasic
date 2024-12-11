@@ -6,4 +6,6 @@ public interface FizzBuzzPopulator {
     void populate(String[] array);
 
     void populate(int from, int to, String[] array);
+
+    String generateAnswerWithoutNull(int from, int to);
 }

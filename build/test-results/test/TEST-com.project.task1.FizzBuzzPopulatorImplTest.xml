@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.project.task1.FizzBuzzPopulatorImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-12-04T21:41:34" hostname="DESKTOP-LRFVLGM" time="0.026">
+<testsuite name="com.project.task1.FizzBuzzPopulatorImplTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-12-11T14:45:09" hostname="DESKTOP-LRFVLGM" time="0.031">
   <properties/>
-  <testcase name="testPopulator()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.02"/>
+  <testcase name="testRange()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.019"/>
+  <testcase name="testPopulator()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.002"/>
   <testcase name="testPopulateWithBounds()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.002"/>
+  <testcase name="testGenerateAnswer()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.003"/>
   <testcase name="testNullArray()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.001"/>
-  <testcase name="testIncorrectArray()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testIncorrectArray()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.002"/>
+  <system-out><![CDATA[FizzBuzz1nullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnull
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

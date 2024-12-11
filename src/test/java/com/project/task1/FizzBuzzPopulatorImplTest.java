@@ -3,7 +3,10 @@ package com.project.task1;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class FizzBuzzPopulatorImplTest {
 
@@ -75,5 +78,24 @@ class FizzBuzzPopulatorImplTest {
                     fizzBuzzPopulator.populate(-1, -2, data);
                 }
         );
+    }
+
+    @Test
+    void testRange() {
+        String[] expected = new String[100];
+        expected[10] = "Buzz";
+        expected[11] = "11";
+        expected[12] = "Fizz";
+        expected[13] = "13";
+        expected[14] = "14";
+        expected[15] = "FizzBuzz";
+        fizzBuzzPopulator.populate(10, 15, data);
+        assertArrayEquals(expected, data);
+    }
+
+    @Test
+    void testGenerateAnswer() {
+        String res = fizzBuzzPopulator.generateAnswerWithoutNull(0, 1);
+        System.out.println(res);
     }
 }

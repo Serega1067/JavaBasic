@@ -1,6 +1,6 @@
 package com.project.task1;
 
-public class FizzBuzzPopulatorImpl implements FizzBuzzPopulator {
+public class FizzBuzzPopulatorImpl implements FizzBuzzPopulator, FizzBuzz {
 
     private static final int LOWER_BOUND = 0;
     private static final int UPPER_BOUND = 100;
@@ -39,8 +39,24 @@ public class FizzBuzzPopulatorImpl implements FizzBuzzPopulator {
         if (data.length != UPPER_BOUND) {
             throw new IllegalArgumentException("array length should be equal 100");
         }
-        for (int number = LOWER_BOUND; number < UPPER_BOUND; number++) {
+        for (int number = from; number <= to && number < UPPER_BOUND; number++) {
             data[number] = fizzBuzzWordGenerator.generate(number);
         }
+    }
+
+    @Override
+    public String generateAnswerWithoutNull(int from, int to) {
+        String[] answer = new String[100];
+        populate(from, to, answer);
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String res : answer) {
+            stringBuilder.append(res);
+        }
+        return stringBuilder.toString();
+    }
+
+    @Override
+    public void print(int from, int to) {
+        System.out.println(generateAnswerWithoutNull(from, to));
     }
 }
