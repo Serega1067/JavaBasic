@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.project.task1.FizzBuzzPopulatorImplTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-12-11T15:55:53" hostname="DESKTOP-LRFVLGM" time="0.042">
+<testsuite name="com.project.task1.FizzBuzzPopulatorImplTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-12-12T16:15:22" hostname="DESKTOP-LRFVLGM" time="0.045">
   <properties/>
-  <testcase name="testGenerateAnswerWithoutNull()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.022"/>
+  <testcase name="testGenerateAnswerWithoutNull()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.024"/>
   <testcase name="testRange()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.002"/>
-  <testcase name="testGenerateAnswer1()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.002"/>
+  <testcase name="testGenerateAnswer1()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.0"/>
   <testcase name="testGenerateAnswer2()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.001"/>
-  <testcase name="testPopulator()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.009"/>
+  <testcase name="testPopulator()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.01"/>
   <testcase name="testPopulateWithBounds()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.002"/>
   <testcase name="testNullArray()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.001"/>
-  <testcase name="testIncorrectArray()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.001"/>
-  <system-out><![CDATA[FizzBuzz 1
-FizzBuzz 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz
-]]></system-out>
+  <testcase name="testIncorrectArray()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.002"/>
+  <testcase name="testSystemOut()" classname="com.project.task1.FizzBuzzPopulatorImplTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

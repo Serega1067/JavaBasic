@@ -74,7 +74,9 @@ public class FizzBuzzPopulatorImpl implements FizzBuzzPopulator, FizzBuzz {
 
     @Override
     public void print(int from, int to) {
-        System.out.println(generateAnswerWithoutNull(from, to));
+//        System.out.println(generateAnswerWithoutNull(from, to));
+        System.out.print(generateAnswerWithoutNull(from, to));
+        System.out.flush(); // для проверки работы System.out.print
     }
 
     private void checkArrayConstraints(String[] data) {

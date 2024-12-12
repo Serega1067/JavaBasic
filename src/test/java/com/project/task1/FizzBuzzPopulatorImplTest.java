@@ -1,13 +1,18 @@
 package com.project.task1;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.AfterAll;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.util.Arrays;
+import java.io.PrintStream;
+import java.io.ByteArrayOutputStream;
+import java.io.BufferedOutputStream;
 
 class FizzBuzzPopulatorImplTest {
 
@@ -17,12 +22,29 @@ class FizzBuzzPopulatorImplTest {
     private static FizzBuzzPopulator fizzBuzzPopulator;
     private static FizzBuzzWordGenerator fizzBuzzWordGenerator;
 
+    private static PrintStream defaultSystemOut;
+    private static ByteArrayOutputStream testBuffer;
+    private FizzBuzz fizzBuzz;
+
     private String[] data;
 
     @BeforeAll
     static void createPopulator() {
         fizzBuzzPopulator = new FizzBuzzPopulatorImpl(TEST_DELIMITER);
         fizzBuzzWordGenerator = new FizzBuzzWordGeneratorImpl();
+    }
+
+    @BeforeAll
+    static void overrideOut() {
+        defaultSystemOut = System.out;
+        testBuffer = new ByteArrayOutputStream();
+        System.setOut(
+                new PrintStream(
+                        new BufferedOutputStream(
+                                testBuffer
+                        )
+                )
+        );
     }
 
     @BeforeEach
@@ -118,5 +140,22 @@ class FizzBuzzPopulatorImplTest {
                         + "2",
                 fizzBuzzPopulator.generateAnswerWithoutNull(0, 2)
                 );
+    }
+
+    @Test
+    void testSystemOut() {
+        new FizzBuzzPopulatorImpl('-').print(0, 2);
+        String res = testBuffer.toString();
+        assertEquals("FizzBuzz-1-2", res);
+    }
+
+    @AfterEach
+    void resetBuffer() {
+        testBuffer.reset();
+    }
+
+    @AfterAll()
+    static void resetOut() {
+        System.setOut(defaultSystemOut);
     }
 }
